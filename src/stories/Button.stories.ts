@@ -26,6 +26,13 @@ export const Disabled: Story = {
     },
 };
 
+export const Loading: Story = {
+    args: {
+        loading: true,
+        children: "Button",
+    },
+};
+
 export const Secondary: Story = {
     args: {
         children: "Button",
