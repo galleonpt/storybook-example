@@ -12,12 +12,20 @@ const meta = {
     tags: ["autodocs"],
     argTypes: {
         // backgroundColor: { control: "color" },
+        size: { options: ["small", "medium", "large"] },
     },
     args: { onClick: fn() },
 } satisfies Meta<typeof Button>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
+
+export const Default: Story = {
+    args: {
+        children: "Button",
+        size: "medium",
+    },
+};
 
 export const Disabled: Story = {
     args: {
@@ -29,34 +37,34 @@ export const Disabled: Story = {
 export const Loading: Story = {
     args: {
         loading: true,
-        children: "Button",
-    },
-};
-
-export const Secondary: Story = {
-    args: {
-        children: "Button",
-    },
-};
-
-export const Large: Story = {
-    args: {
-        // size: "large",
-        children: "Button",
+        children: "Loading",
     },
 };
 
 export const Small: Story = {
     args: {
-        // size: "small",
-        children: "Button",
+        size: "small",
+        children: "Small",
     },
 };
 
-export const Warning: Story = {
+export const Large: Story = {
     args: {
-        // primary: true,
-        children: "Delete now",
-        // backgroundColor: "red",
+        size: "large",
+        children: "Large",
     },
 };
+
+// export const Secondary: Story = {
+//     args: {
+//         children: "Button",
+//     },
+// };
+
+// export const Warning: Story = {
+//     args: {
+//         // primary: true,
+//         children: "Delete now",
+//         // backgroundColor: "red",
+//     },
+// };
