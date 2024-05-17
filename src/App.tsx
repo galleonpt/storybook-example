@@ -1,11 +1,5 @@
-import Button from "./components/Button";
-
 function App() {
-    return (
-        <div className="app_container">
-            <Button />
-        </div>
-    );
+    return <h1>Run npm run storybook</h1>;
 }
 
 export default App;
