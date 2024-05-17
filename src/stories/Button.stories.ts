@@ -13,6 +13,7 @@ const meta = {
     argTypes: {
         // backgroundColor: { control: "color" },
         size: { options: ["small", "medium", "large"] },
+        type: { options: ["default", "success", "danger"] },
     },
     args: { onClick: fn() },
 } satisfies Meta<typeof Button>;
@@ -55,16 +56,16 @@ export const Large: Story = {
     },
 };
 
-// export const Secondary: Story = {
-//     args: {
-//         children: "Button",
-//     },
-// };
+export const Success: Story = {
+    args: {
+        children: "Success",
+        type: "success",
+    },
+};
 
-// export const Warning: Story = {
-//     args: {
-//         // primary: true,
-//         children: "Delete now",
-//         // backgroundColor: "red",
-//     },
-// };
+export const Danger: Story = {
+    args: {
+        children: "Danger",
+        type: "danger",
+    },
+};

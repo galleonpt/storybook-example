@@ -20,7 +20,7 @@ button:hover {
 /* disabled */
 button:disabled {
     cursor: not-allowed;
-    opacity: 0.2;
+    opacity: 0.4;
 }
 
 /* sizes */
@@ -30,4 +30,13 @@ button:disabled {
 
 .large {
     padding: 12px 28px;
+}
+
+/* types */
+.success {
+    background-color: var(--success-color);
+}
+
+.danger {
+    background-color: var(--danger-color);
 }
