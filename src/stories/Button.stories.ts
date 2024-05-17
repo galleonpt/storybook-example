@@ -22,7 +22,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Disabled: Story = {
     args: {
-        disabled: false,
+        disabled: true,
         children: "Disabled",
     },
 };
