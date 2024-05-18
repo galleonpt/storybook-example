@@ -6,7 +6,7 @@ type TButtonSize = "small" | "medium" | "large";
 
 type TButtonType = "default" | "success" | "danger";
 
-interface IButtonProps extends PropsWithChildren {
+export interface IButtonProps extends PropsWithChildren {
     size?: TButtonSize;
     type?: TButtonType;
     disabled?: boolean;
