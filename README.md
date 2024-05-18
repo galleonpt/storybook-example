@@ -11,3 +11,7 @@ To see the outcome of this project you can:
 -   Clone the repo
 -   Install dependencies
 -   Run `npm run storybook`
+
+## Other
+
+Something that I would like to do with this is publish as a `npm` package. I tried but couldn't have something working.
