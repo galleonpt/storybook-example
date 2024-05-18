@@ -1,0 +1,6 @@
+.storybook
+node_modules
+build
+dist
+public
+src/**/*.stories.*
